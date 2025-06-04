@@ -1,60 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho Alura: Programação para Crianças</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Agrinho: Campo e Cidade em Conexão</title>
+    <style>
+        /* Estilos CSS básicos para melhorar a aparência */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50; /* Verde Agrinho */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 5px solid #FFD700; /* Dourado */
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .campo {
+            border-color: #8BC34A; /* Verde mais claro para o campo */
+        }
+        .cidade {
+            border-color: #2196F3; /* Azul para a cidade */
+        }
+        .conexao {
+            border-color: #FF9800; /* Laranja para a conexão */
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #eee;
+            border-radius: 8px;
+            color: #555;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Bem-vindos ao Mundo do Agrinho e da Programação!</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre o Agrinho</a></li>
-                <li><a href="#programacao">O que é Programação?</a></li>
-                <li><a href="#projetos">Seus Primeiros Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <h1>Agrinho: Campo e Cidade em Conexão</h1>
+        <p>A importância da interdependência entre o meio rural e urbano.</p>
     </header>
 
-    <main>
-        <section id="sobre">
-            <h2>Descubra o Agrinho!</h2>
-            <p>O <strong>Projeto Agrinho</strong>, em parceria com a Alura, é uma iniciativa incrível para levar o mundo da programação e do pensamento computacional para as crianças. Através de atividades lúdicas e divertidas, como o Scratch, os pequenos aprendizes descobrem como criar suas próprias histórias, jogos e animações!</p>
-            <img src="imagens/agrinho-logo.png" alt="Logo do Agrinho" class="imagem-destaque">
-        </section>
-
-        <section id="programacao">
-            <h2>O que é Programação?</h2>
-            <p>Programar é como dar instruções para o computador fazer o que você quer! É como montar um quebra-cabeça gigante, onde cada peça é uma instrução. Com a programação, você pode criar desde um joguinho simples até um aplicativo superlegal para o celular.</p>
-            <p>No Agrinho, você aprende a programar de um jeito muito visual e intuitivo, usando bloquinhos de código no Scratch. É divertido e fácil!</p>
-            <button id="mudarTextoBtn">Curiosidade do dia!</button>
-            <p id="curiosidade"></p>
-        </section>
-
-        <section id="projetos">
-            <h2>Seus Primeiros Projetos!</h2>
-            <p>Com o Agrinho, você pode:</p>
+    <div class="container">
+        <div class="section campo">
+            <h2>🌳 O Campo: Nossa Origem</h2>
+            <p>O campo é a base de tudo! É de onde vêm os alimentos que chegam à nossa mesa: frutas, verduras, grãos, carnes e leite. Além disso, fornece matérias-primas essenciais para a indústria, como algodão, madeira e muito mais.</p>
             <ul>
-                <li>Criar animações com personagens e cenários.</li>
-                <li>Desenvolver joguinhos simples com regras que você inventa.</li>
-                <li>Contar histórias interativas onde o leitor decide o que acontece.</li>
-                <li>Soltar a imaginação e construir o que quiser!</li>
+                <li>Produção de alimentos frescos</li>
+                <li>Fonte de matérias-primas</li>
+                <li>Preservação ambiental</li>
             </ul>
-        </section>
-    </main>
+        </div>
+
+        <div class="section cidade">
+            <h2>🏙️ A Cidade: Centro de Trocas</h2>
+            <p>A cidade é onde vive a maior parte da população. Ela oferece serviços, tecnologia, educação e oportunidades de trabalho. É também o lugar onde os produtos do campo são transformados, comercializados e consumidos.</p>
+            <ul>
+                <li>Mercados e indústrias</li>
+                <li>Tecnologia e inovação</li>
+                <li>Serviços e educação</li>
+            </ul>
+        </div>
+
+        <div class="section conexao">
+            <h2>🤝 A Conexão: Um Ciclo Essencial</h2>
+            <p>Campo e cidade não vivem um sem o outro! O campo produz o que a cidade consome, e a cidade fornece a tecnologia, os insumos e os serviços que o campo precisa para produzir mais e melhor.</p>
+            <p>Pense nisso: o trator que o agricultor usa veio da cidade, e os legumes que você come no almoço vieram do campo!</p>
+            <p>Essa relação de troca é fundamental para o desenvolvimento e bem-estar de todos.</p>
+        </div>
+    </div>
 
     <footer>
-        <section id="contato">
-            <h3>Fale Conosco</h3>
-            <p>Para saber mais sobre o Projeto Agrinho e a parceria com a Alura, entre em contato através do nosso site oficial ou redes sociais.</p>
-            <p>Siga-nos: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
-        </section>
-        <p>&copy; 2025 Projeto Agrinho Alura. Todos os direitos reservados.</p>
+        <p>Projeto Agrinho Alura - Desvendando o Brasil Rural e Urbano</p>
+        <p>&copy; 2025. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
